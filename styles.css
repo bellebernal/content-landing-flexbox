@@ -1,0 +1,299 @@
+html {
+    width: auto;
+    height: auto;
+}
+ 
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse;
+    align-items: wrap;
+}
+
+
+#top-border, #bottom-border {
+    display: flex;
+    border-top: 5px;
+    border-bottom: 5px;
+    background: #ac0428;
+    border-color: black;
+    border-style: solid;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.social-logo {
+    display: flex;
+    padding-right: 30px;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.social-logo img {
+    height: auto;
+    padding-top: 5px
+}
+
+.content-image img {
+    padding-left: 50px;
+    height: auto;
+    width: auto;
+}
+
+.kap-logo {
+    display: flex;
+    padding-left: 30px;
+    width: -webkit-fill-available;
+    height: 60px;
+    /* border: 5px solid red; */
+}
+
+#side-note {
+    align-self: flex-start;
+    margin-top: 10%;
+    margin-left: 0%;
+    margin-right: 2%;
+    /* border: 3px solid cyan; */
+}
+
+hr {
+    width: auto;
+    height: 5px;
+    margin-left: 9%;
+    margin-right: 8%
+}
+
+.sn_title {
+    line-height: 1.5;
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-top: 0px;
+    color: #db8ea1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13pt;
+}
+
+.sn_subtitle {
+    line-height: 1.5;
+    padding-left: 40px;
+    padding-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sn_list {
+    line-height: 1.5;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 156px;
+    width: 289.219;
+
+}
+
+#content-body {
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-left: 4%;
+    margin-right: 10%;
+    /* border: 3px solid yellow; */
+  } 
+
+#main-title {
+    line-height: .9;
+}
+
+.title {
+    padding-top: 8pt;
+    color: #ac0428;
+    font-weight: 700;
+    font-size: 26pt;
+    padding-bottom: 0pxt;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left
+}
+
+.title2 {
+    padding-top: 8pt;
+    color: #db8ea1;
+    font-weight: 700;
+    font-size: 18pt;
+    padding-bottom: 0pxt;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left
+}
+
+#objective, .obj {
+    padding-top: 3%;
+    font-size: 13pt;
+    line-height: 1.5;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#introduction, #activity {
+    padding-top: 5%;
+}
+
+.intro {
+    padding-bottom: 8pt;
+    text-align: left;
+    color: #ac0428;
+    font-weight: 700;
+    vertical-align: baseline;
+    font-size: 15pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.intro-content p {
+    line-height: 1.5;
+    padding-top: 10pt;
+}
+
+p {
+    margin: 0;
+    color: #000000;
+    line-height: 1.15;
+    text-align: left;
+    font-size: 13pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.li_text {
+    line-height: 1.5;
+    font-size: 13pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-image img {
+    transform: rotate(0.00rad) translateZ(0px); 
+    -webkit-transform: rotate(0.00rad) translateZ(0px); 
+    padding-top: 20px; 
+    padding-left: 9px;
+}
+
+#table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    line-height: 1.5;
+}
+.sub-list {
+    margin-left: 72pt;
+    padding-top: 0pt;
+    padding-left: 0pt;
+    padding-bottom: 0pt;
+    line-height: 1.5;
+    orphans: 2;
+    widows: 2;
+    text-align: left;
+    font-size: 13pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.list {
+    margin-left: 25pt;
+    padding-left: 0pt;
+    font-size: 13pt;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p.table-content {
+    line-height: 1.5;
+}
+
+.subtitle {
+    padding-top: 18pt;
+    color: #666666;
+    font-size: 24pt;
+    padding-bottom: 4pt;
+    font-family: "Georgia";
+    line-height: 1.5;
+    page-break-after: avoid;
+    font-style: italic;
+    orphans: 2;
+    widows: 2;
+    text-align: left
+}
+
+li {
+    color: #000000;
+    font-size: 11pt;
+    font-family: "Open Sans"
+}
+
+span.company-logo img {
+    height: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* responsive for portrait mode on mobile */
+@media screen and (orientation: portrait) and (min-width: 320px) and (max-width: 678px){
+    .container {
+     display: flex;
+     padding-left: 10px;
+     justify-items: flex-start;
+     flex-wrap: wrap;
+   }
+
+   #side-note {
+       /* margin-right: -4%; */
+       display: flex;
+       margin-right: auto;
+       flex-direction: column;
+   }
+   /* TODO for later : css animation -- tab on right-side w/left slide-in 
+
+   /* responsive border + icons */
+   #top-border, #bottom-border {
+        border-top:  0px;
+        border-bottom: 0px;
+   }
+
+   .social-logo img {
+    height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+   }
+
+   .company-logo img {
+       height: 35px;
+       padding-top: 10px;
+       padding-bottom: 10px;
+   }
+
+   /* TODO for later:  responsive viewport --> landscape mode on mobile:
+   + REPONSIVE LANDSCAPE MODE (via viewport) -- PENDING**
+    -> mode on mobile: LOW PRIORITY -- parking lot
+   775x375(b)
+   667x375(b)
+   740x360(w)
+   812x375(w)
+   736x414(w) 
+    
+   @media screen and (orientation: lansdscape) and (min-height: 360px) and (max-height: 414px) {
+       .container {
+           display: flex;
+           padding-left: 10px;
+           justify-items: flex-start;
+           flex-wrap: wrap;
+       }
+
+        #top-border, #bottom-border {
+            border-top: 0px;
+            border-bottom: 0px;
+        }
+
+        .social-logo img {
+            height: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 20px;
+        }
+
+        .kap-logo img{
+            height: 35px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        } */
